@@ -1,0 +1,48 @@
+{
+  "name": "is-jxr",
+  "version": "0.0.0",
+  "description": "Check if a Buffer/Uint8Array is a JPEG XR image",
+  "license": "MIT",
+  "repository": "sindresorhus/is-jxr",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "browser": "browserify -s $npm_package_name -o browser.js ."
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "jxr",
+    "jpeg xr",
+    "jpg",
+    "jpeg",
+    "image",
+    "img",
+    "pic",
+    "picture",
+    "photo",
+    "type",
+    "detect",
+    "check",
+    "is",
+    "exif",
+    "binary",
+    "buffer",
+    "uint8array",
+    "cli",
+    "bin"
+  ],
+  "devDependencies": {
+    "browserify": "^3.0.0",
+    "mocha": "*",
+    "read-chunk": "^0.1.0"
+  }
+}

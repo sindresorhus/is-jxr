@@ -1,0 +1,31 @@
+{
+  "name": "is-jxr",
+  "version": "0.0.0",
+  "description": "Check if a Buffer/Uint8Array is a JPEG XR image",
+  "license": "MIT",
+  "repo": "sindresorhus/is-jxr",
+  "scripts": [
+    "index.js"
+  ],
+  "keywords": [
+    "jxr",
+    "jpeg xr",
+    "jpg",
+    "jpeg",
+    "image",
+    "img",
+    "pic",
+    "picture",
+    "photo",
+    "type",
+    "detect",
+    "check",
+    "is",
+    "exif",
+    "binary",
+    "buffer",
+    "uint8array",
+    "cli",
+    "bin"
+  ]
+}
