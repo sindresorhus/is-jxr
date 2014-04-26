@@ -27,7 +27,7 @@ $ component install sindresorhus/is-jxr
 ```js
 var readChunk = require('read-chunk'); // npm install read-chunk
 var isJxr = require('is-jxr');
-var buffer = readChunk('unicorn.jxr', 0, 3);
+var buffer = readChunk.sync('unicorn.jxr', 0, 3);
 
 isJxr(buffer);
 //=> true
