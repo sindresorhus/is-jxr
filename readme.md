@@ -11,14 +11,6 @@ Used by [image-type](https://github.com/sindresorhus/image-type).
 $ npm install --save is-jxr
 ```
 
-```sh
-$ bower install --save is-jxr
-```
-
-```sh
-$ component install sindresorhus/is-jxr
-```
-
 
 ## Usage
 

@@ -1,7 +1,7 @@
 'use strict';
 var assert = require('assert');
 var readChunk = require('read-chunk');
-var isJxr = require('./index');
+var isJxr = require('./');
 
 function check(filename) {
 	return isJxr(readChunk.sync(filename, 0, 3));
