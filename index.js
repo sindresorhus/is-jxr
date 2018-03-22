@@ -1,10 +1,10 @@
 'use strict';
-module.exports = function (buf) {
-	if (!buf || buf.length < 3) {
+module.exports = buffer => {
+	if (!buffer || buffer.length < 3) {
 		return false;
 	}
 
-	return buf[0] === 73 &&
-		buf[1] === 73 &&
-		buf[2] === 188;
+	return buffer[0] === 73 &&
+		buffer[1] === 73 &&
+		buffer[2] === 188;
 };

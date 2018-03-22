@@ -1,14 +1,12 @@
 # is-jxr [![Build Status](https://travis-ci.org/sindresorhus/is-jxr.svg?branch=master)](https://travis-ci.org/sindresorhus/is-jxr)
 
-> Check if a Buffer/Uint8Array is a [JPEG XR](http://en.wikipedia.org/wiki/JPEG_XR) image
-
-Used by [image-type](https://github.com/sindresorhus/image-type).
+> Check if a Buffer/Uint8Array is a [JPEG XR](https://en.wikipedia.org/wiki/JPEG_XR) image
 
 
 ## Install
 
-```sh
-$ npm install --save is-jxr
+```
+$ npm install is-jxr
 ```
 
 
@@ -17,9 +15,9 @@ $ npm install --save is-jxr
 ##### Node.js
 
 ```js
-var readChunk = require('read-chunk'); // npm install read-chunk
-var isJxr = require('is-jxr');
-var buffer = readChunk.sync('unicorn.jxr', 0, 3);
+const readChunk = require('read-chunk');
+const isJxr = require('is-jxr');
+const buffer = readChunk.sync('unicorn.jxr', 0, 3);
 
 isJxr(buffer);
 //=> true
@@ -28,11 +26,11 @@ isJxr(buffer);
 ##### Browser
 
 ```js
-var xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 xhr.open('GET', 'unicorn.jxr');
 xhr.responseType = 'arraybuffer';
 
-xhr.onload = function () {
+xhr.onload = () => {
 	isJxr(new Uint8Array(this.response));
 	//=> true
 };
@@ -50,6 +48,11 @@ Accepts a Buffer (Node.js) or Uint8Array.
 It only needs the first 3 bytes.
 
 
+## Related
+
+- [file-type](https://github.com/sindresorhus/file-type) - Detect the file type of a Buffer/Uint8Array
+
+
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

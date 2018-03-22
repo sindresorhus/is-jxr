@@ -1,13 +1,10 @@
-'use strict';
-var assert = require('assert');
-var readChunk = require('read-chunk');
-var isJxr = require('./');
+import test from 'ava';
+import readChunk from 'read-chunk';
+import m from '.';
 
-function check(filename) {
-	return isJxr(readChunk.sync(filename, 0, 3));
-}
+const check = filename => m(readChunk.sync(filename, 0, 3));
 
-it('should detect JPEG XR from Buffer', function () {
-	assert(check('fixture.jxr'));
-	assert(!check('fixture.png'));
+test('detects JPEG XR from Buffer', t => {
+	t.true(check('fixture.jxr'));
+	t.false(check('fixture.png'));
 });
