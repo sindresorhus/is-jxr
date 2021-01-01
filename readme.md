@@ -1,4 +1,4 @@
-# is-jxr [![Build Status](https://travis-ci.org/sindresorhus/is-jxr.svg?branch=master)](https://travis-ci.org/sindresorhus/is-jxr)
+# is-jxr
 
 > Check if a Buffer/Uint8Array is a [JPEG XR](https://en.wikipedia.org/wiki/JPEG_XR) image
 
