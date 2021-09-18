@@ -2,22 +2,21 @@
 
 > Check if a Buffer/Uint8Array is a [JPEG XR](https://en.wikipedia.org/wiki/JPEG_XR) image
 
-
 ## Install
 
+```sh
+npm install is-jxr
 ```
-$ npm install is-jxr
-```
-
 
 ## Usage
 
 ##### Node.js
 
 ```js
-const readChunk = require('read-chunk');
-const isJxr = require('is-jxr');
-const buffer = readChunk.sync('unicorn.jxr', 0, 3);
+import {readChunk} from 'read-chunk';
+import isJxr from 'is-jxr';
+
+const buffer = await readChunk('unicorn.jxr', {length: 3});
 
 isJxr(buffer);
 //=> true
@@ -38,21 +37,14 @@ xhr.onload = () => {
 xhr.send();
 ```
 
-
 ## API
 
 ### isJxr(buffer)
 
-Accepts a Buffer (Node.js) or Uint8Array.
+Accepts a `Buffer` (Node.js) or `Uint8Array`.
 
 It only needs the first 3 bytes.
-
 
 ## Related
 
 - [file-type](https://github.com/sindresorhus/file-type) - Detect the file type of a Buffer/Uint8Array
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
